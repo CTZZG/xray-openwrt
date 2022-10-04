@@ -33,7 +33,7 @@ jobs:
           cd Xray-core
           git checkout tags/v1.6.0
           cd ..
-          wget https://raw.githubusercontent.com/felix-fly/CTZZG/master/build.sh
+          wget https://raw.githubusercontent.com/CTZZG/xray-openwrt/master/build.sh
           chmod +x ./build.sh
           ./build.sh android arm64
           ./build.sh darwin amd64
