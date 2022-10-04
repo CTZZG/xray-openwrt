@@ -31,7 +31,7 @@ jobs:
           # Do not use "--depth=1" due to tags
           git clone https://github.com/XTLS/Xray-core.git
           cd Xray-core
-          git checkout tags/v1.6.1
+          git checkout tags/v1.6.0
           cd ..
           wget https://raw.githubusercontent.com/CTZZG/xray-openwrt/master/build.sh
           chmod +x ./build.sh
