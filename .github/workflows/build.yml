@@ -48,9 +48,8 @@ jobs:
 #          ./build.sh linux mips64
 #          ./build.sh linux mips64le
       - name: Upload artifact
-        uses: "marvinpinto/action-automatic-releases@latest"
+        uses: actions/upload-artifact@master
+        if: always()
         with:
-          repo_token: "${{ secrets.UPLOAD_KEY }}"
-          prerelease: false
-          files: |
-            bin/*.tar.gz
+          name: Padavan-packages
+          path: bin
