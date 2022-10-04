@@ -35,6 +35,7 @@ jobs:
           cd ..
           wget https://raw.githubusercontent.com/CTZZG/xray-openwrt/master/build.sh
           chmod +x ./build.sh
+           ./build.sh linux mipsle
 #          ./build.sh android arm64
 #          ./build.sh darwin amd64
 #          ./build.sh linux 386
@@ -44,7 +45,6 @@ jobs:
 #          ./build.sh linux armv7
 #          ./build.sh linux arm64
 #          ./build.sh linux mips
-          ./build.sh linux mipsle
 #          ./build.sh linux mips64
 #          ./build.sh linux mips64le
       - name: Upload artifact
